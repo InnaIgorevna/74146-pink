@@ -6,3 +6,23 @@
     .padding();
   }
 }
+
+@media @tablet-widths {
+  .posts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .post {
+    width: 320px;
+    margin: 10px auto;
+    &__picture--full-width img{
+      width: 100%;
+    }
+
+    &--overall-width {
+      width: 100%;
+    }
+  }
+}

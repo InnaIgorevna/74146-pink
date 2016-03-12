@@ -18,3 +18,23 @@
     margin: 20px auto;
   }
 }
+
+@media @tablet-widths {
+  .photo-upload {
+    width: 100%;
+
+    &__picture {
+      .inline-block();
+      width: 45%;
+    }
+
+    &__tools {
+      .inline-block();
+      width: 50%;
+    }
+
+    &__tools-list li{
+      display: block;
+    }
+  }
+}
