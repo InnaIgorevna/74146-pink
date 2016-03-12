@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
@@ -23,57 +24,80 @@
     </header>
 
     <main>
-      <div class="intro  intro--main">
-        <h1 class="intro__title">Взгляните на жизнь иначе</h1>
-        <div class="intro__hand-phone-picture">
-          <img src="http://placehold.it/320x313">
-        </div>
-        <div class="intro__inner-picture">
-          <img src="http://placehold.it/109x192">
-        </div>
-      </div>
-
-      <div class="application-download">
-        <div>
-          <a class="application-download__link  application-download__link--round-link" href="#">Cкачать приложение</a>
+      <div class="intro-application-container">
+        <div class="intro  intro--main">
+          <h1 class="intro__title">Взгляните на жизнь иначе</h1>
+          <div class="intro__hand-phone-picture"></div>
         </div>
 
-        <ul class="application-download__apps-list">
-          <li class="application-download__apps-item">
-            <img src="http://placehold.it/50x60">
-          </li>
-          <li class="application-download__apps-item">
-            <img src="http://placehold.it/50x60">
-          </li>
-          <li class="application-download__apps-item">
-            <img src="http://placehold.it/50x60">
-          </li>
-        </ul>
+        <div class="application-download">
+          <div>
+            <a class="application-download__link  application-download__link--round-link" href="#">Cкачать приложение</a>
+          </div>
 
-        <div class="application-download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
+          <ul class="application-download__apps-list">
+            <li class="application-download__apps-item">
+              <img src="http://placehold.it/50x60">
+            </li>
+            <li class="application-download__apps-item">
+              <img src="http://placehold.it/50x60">
+            </li>
+            <li class="application-download__apps-item">
+              <img src="http://placehold.it/50x60">
+            </li>
+          </ul>
+
+          <div class="application-download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
+        </div>
       </div>
 
       <div class="information">
         <span class="information__title">Устали от серости мегаполиса?</span>
         <span class="information__title">Нам есть, что вам предложить!</span>
 
-        <div class="information__article">
-          <h2 class="information__article-title">Поднимает настроение</h2>
-          <p class="information__article-story">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </div>
-        <div class="information__article">
-          <h2 class="information__article-title">Меняет мир вокруг</h2>
-          <p class="information__article-story">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </div>
-        <div class="information__article">
-          <h2 class="information__article-title">Заводит новых друзей</h2>
-          <p class="information__article-story">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </div>
+        <div class="information__article-container">
+          <div class="information__article-container-interior">
+            <div class="information__article">
+              <h2 class="information__article-title">Поднимает настроение</h2>
+              <p class="information__article-story">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="information__article">
+              <h2 class="information__article-title">Меняет мир вокруг</h2>
+              <p class="information__article-story">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </div>
+            <div class="information__article">
+              <h2 class="information__article-title">Заводит новых друзей</h2>
+              <p class="information__article-story">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
+          </div>
 
-        <div class="information__picture">
-          <img src="http://placehold.it/160x320">
+
+          <div class="information__picture">
+            <img src="http://placehold.it/160x320">
+          </div>
         </div>
       </div>
+
+      <div class="research">
+        <div class="research__picture">
+          <img src="http://placehold.it/240x280">
+        </div>
+
+        <div class="research__text">
+          <h2 class="research__title">Эффект на 24 часа!</h2>
+
+          <p class="research__story">
+            Британские ученые провели исследования
+            и доказали, что положительный эффект
+            от использования приложения длится
+            целые сутки!
+          </p>
+          <a class="research__link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </div>
+
+
+
 
       <div class="review">
         <div class="slider">
@@ -116,13 +140,32 @@
             <table class="price__table">
               <tr>
                 <th class="price__table-head  price__table-head--hot">
+
+                </th>
+                <th class="price__table-head  price__table-head--hot">
+                  <span class="price__table-head-name">база</span>
+                  <span class="price__table-head-price">1,99 USD</span>
+                </th>
+                <th class="price__table-head  price__table-head--hot">
                   <span class="price__table-head-name">стандарт</span>
                   <span class="price__table-head-price">3,99 USD</span>
+                </th>
+                <th class="price__table-head  price__table-head--hot">
+                  <span class="price__table-head-name">анлим</span>
+                  <span class="price__table-head-price">9,99 USD</span>
                 </th>
               </tr>
               <tr>
                 <td>
                   <span class="price__table-option">Розовый фильтр</span>
+                </td>
+                <td>
+                  <i class="price__table-option-icon  price__table-option-icon--included"></i>
+                </td>
+                <td>
+                  <i class="price__table-option-icon  price__table-option-icon--included"></i>
+                </td>
+                <td>
                   <i class="price__table-option-icon  price__table-option-icon--included"></i>
                 </td>
               </tr>
@@ -131,11 +174,29 @@
                   <span class="price__table-option">Смайлик</span>
                   <i class="price__table-option-icon  price__table-option-icon--included"></i>
                 </td>
+                <td>
+                  <i class="price__table-option-icon  price__table-option-icon--included"></i>
+                </td>
+                <td>
+                  <i class="price__table-option-icon  price__table-option-icon--included"></i>
+                </td>
+                <td>
+                  <i class="price__table-option-icon  price__table-option-icon--included"></i>
+                </td>
               </tr>
               <tr>
                 <td>
                   <span class="price__table-option">Комментарии</span>
                   <i class="price__table-option-icon  price__table-option-icon--excluded"></i>
+                </td>
+                <td>
+                  <i class="price__table-option-icon  price__table-option-icon--included"></i>
+                </td>
+                <td>
+                  <i class="price__table-option-icon  price__table-option-icon--included"></i>
+                </td>
+                <td>
+                  <i class="price__table-option-icon  price__table-option-icon--included"></i>
                 </td>
               </tr>
             </table>
@@ -152,9 +213,8 @@
 
 
     <footer class="main-page-footer">
+      <h2 class="main-page-footer__title">Остались вопросы? Свяжитесь с нами</h2>
       <div class="main-page-footer__contacts">
-        <span class="main-page-footer__contacts-title">Остались вопросы? Свяжитесь с нами</span>
-
         <div class="main-page-footer__contact">
           <h2 class="main-page-footer__contact-text">Звоните:</h2>
           <span class="main-page-footer__contact-value">+7(812)555-66-66</span>

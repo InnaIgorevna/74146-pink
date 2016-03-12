@@ -1,15 +1,21 @@
-.intro{
+.intro {
+  width: 100%;
   .outline();
+  position: relative;
 
-  &__hand-phone-picture{
+  &__hand-phone-picture {
     position: relative;
   }
 
   &__inner-picture{
     .position-absolute();
     top: 189px;
-    margin-left: 100px;
   }
 }
 
+@media @tablet-widths {
+  .intro {
+    width: 46%;
+  }
+}
 

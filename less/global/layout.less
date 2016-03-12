@@ -1,5 +1,36 @@
-body{
-  width: 320px;
+body {
   margin: 0px auto;
   text-align: center;
 }
+
+
+@media @mobile-widths-only {
+  body {
+    width: 320px;
+  }
+
+  .research {
+    display: none;
+  }
+}
+
+@media @tablet-widths {
+  body {
+    width: 700px;
+  }
+}
+
+@media @desktop-widths {
+  body {
+    width: 1200px;
+  }
+}
+
+main {
+  width: auto;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+
+
