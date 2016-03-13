@@ -10,3 +10,29 @@
     margin: 40px 0px;
   }
 }
+
+@media @tablet-widths {
+  .information {
+    width: 100%;
+
+    &__title {
+      padding: 0px 138px;
+    }
+
+    &__article-container {
+      width: auto;
+      display: flex;
+      display: inline-flex;
+    }
+
+    &__article-container-interior {
+      width: 50%;
+      order: 2;
+    }
+
+    &__picture {
+      width: 40%;
+      order: 1;
+    }
+  }
+}

@@ -23,7 +23,7 @@
   }
 
   &__textarea {
-    width: 280px;
+    width: 80%;
     height: 201px;
     border: 2px solid #e5e5e5;
     text-align: center;
@@ -33,5 +33,20 @@
     width: 280px;
     height: 63px;
     margin: 40px auto;
+  }
+}
+
+@media @tablet-widths {
+  .fieldset {
+    width: 80%;
+    margin: 40px auto;
+
+    &__textarea {
+      width: 80%;
+    }
+
+    &__input {
+      width: 93%;
+    }
   }
 }

@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -33,91 +34,101 @@
           Пожалуйста, заполните форму ниже:
         </p>
 
-        <div class="fieldset">
-          <label><span class="fieldset__text">Имя:</span>
-            <input class="fieldset__input" type="text" placeholder="Введите ваше имя">
-          </label>
+        <div class="form__user-initials-container">
+          <div class="fieldset">
+            <label><span class="fieldset__text">Имя:</span>
+              <input class="fieldset__input" type="text" placeholder="Введите ваше имя">
+            </label>
 
-          <label><span class="fieldset__text">Фамилия:</span>
-            <input class="fieldset__input" type="text" placeholder="Укажите фамилию">
-          </label>
+            <label><span class="fieldset__text">Фамилия:</span>
+              <input class="fieldset__input" type="text" placeholder="Укажите фамилию">
+            </label>
 
-          <label><span class="fieldset__text">Отчество:</span>
-            <input class="fieldset__input" type="text" placeholder="Ну и отчество тоже">
-          </label>
-        </div>
-
-        <div class="fieldset">
-          <h2 class="fieldset__text  fieldset__text--title">Ваши безбашенные достижения в путешествии</h2>
-
-          <div class="fieldset__checkbox-block">
-            <input class="fieldset__checkbox" id="first-achievement-selfie" type="checkbox" checked>
-            <label class="fieldset__checkbox-label" for="first-achievement-selfie">Сделал селфи с акулой</label>
-          </div>
-
-          <div class="fieldset__checkbox-block">
-            <input class="fieldset__checkbox" id="second-achievement-burned" type="checkbox" checked>
-            <label class="form__user-achievements-text" for="second-achievement-burned">Обгорел на пляже</label>
-          </div>
-
-          <div class="fieldset__checkbox-block">
-            <input class="fieldset__checkbox" id="third-achievement-see-chuck" type="checkbox">
-            <label class="form__user-achievements-text" for="third-achievement-see-chuck">Видел Чака Норриса</label>
-          </div>
-
-          <div class="fieldset__checkbox-block">
-            <input class="fieldset__checkbox" id="fourth-achievement-souvenir" type="checkbox">
-            <label class="form__user-achievements-text" for="fourth-achievement-souvenir">Накупил сувениров</label>
-          </div>
-
-          <div class="fieldset__checkbox-block">
-            <input class="fieldset__checkbox" id="fifth-achievement-withheld" type="checkbox" checked>
-            <label class="form__user-achievements-text" for="fifth-achievement-withheld">Удержал башню</label>
-          </div>
-
-          <div class="fieldset__checkbox-block">
-            <input class="fieldset__checkbox" id="sixth-achievement-smash" type="checkbox">
-            <label class="form__user-achievements-text" for="sixth-achievement-smash">Разгромил отель</label>
+            <label><span class="fieldset__text">Отчество:</span>
+              <input class="fieldset__input" type="text" placeholder="Ну и отчество тоже">
+            </label>
           </div>
         </div>
 
-        <div class="fieldset">
-          <label><span class="fieldset__text">Номерок телефончика</span>
-            <input class="fieldset__input" type="text" placeholder="Номер, пожалуйста">
-          </label>
+        <div class="form__user-achievements-container">
+          <div class="fieldset">
+            <h2 class="fieldset__text  fieldset__text--title">Ваши безбашенные достижения в путешествии</h2>
 
-          <label><span class="fieldset__text">адресок почты</span>
-            <input class="fieldset__input" type="text" placeholder="E-mail, пожалуйста">
-          </label>
+            <div class="fieldset__checkbox-block">
+              <input class="fieldset__checkbox" id="first-achievement-selfie" type="checkbox" checked>
+              <label class="fieldset__checkbox-label" for="first-achievement-selfie">Сделал селфи с акулой</label>
+            </div>
+
+            <div class="fieldset__checkbox-block">
+              <input class="fieldset__checkbox" id="second-achievement-burned" type="checkbox" checked>
+              <label class="form__user-achievements-text" for="second-achievement-burned">Обгорел на пляже</label>
+            </div>
+
+            <div class="fieldset__checkbox-block">
+              <input class="fieldset__checkbox" id="third-achievement-see-chuck" type="checkbox">
+              <label class="form__user-achievements-text" for="third-achievement-see-chuck">Видел Чака Норриса</label>
+            </div>
+
+            <div class="fieldset__checkbox-block">
+              <input class="fieldset__checkbox" id="fourth-achievement-souvenir" type="checkbox">
+              <label class="form__user-achievements-text" for="fourth-achievement-souvenir">Накупил сувениров</label>
+            </div>
+
+            <div class="fieldset__checkbox-block">
+              <input class="fieldset__checkbox" id="fifth-achievement-withheld" type="checkbox" checked>
+              <label class="form__user-achievements-text" for="fifth-achievement-withheld">Удержал башню</label>
+            </div>
+
+            <div class="fieldset__checkbox-block">
+              <input class="fieldset__checkbox" id="sixth-achievement-smash" type="checkbox">
+              <label class="form__user-achievements-text" for="sixth-achievement-smash">Разгромил отель</label>
+            </div>
+          </div>
         </div>
 
-        <div class="fieldset">
-          <h2 class="fieldset__text  fieldset__text--title">С каким приложением путешествовали?</h2>
+        <div class="form__contact-information-container">
+          <div class="fieldset">
+            <label><span class="fieldset__text">Номерок телефончика</span>
+              <input class="fieldset__input" type="text" placeholder="Номер, пожалуйста">
+            </label>
 
-          <div class="fieldset__devices-element">
-            <input class="fieldset__radio" type="radio" id="first-device-iOS" name="user-device" checked>
-            <label class="form__user-devices-text" for="first-device-iOS">Pink для iOS</label>
-          </div>
-
-          <div class="fieldset__devices-element">
-            <input class="fieldset__radio" type="radio" id="second-device-android" name="user-device">
-            <label class="form__user-devices-text" for="second-device-android">Pink на Android</label>
-          </div>
-
-          <div class="fieldset__devices-element">
-            <input class="fieldset__radio" type="radio" id="third-device-windows" name="user-device">
-            <label class="form__user-devices-text" for="third-device-windows">Windows Phone</label>
+            <label><span class="fieldset__text">адресок почты</span>
+              <input class="fieldset__input" type="text" placeholder="E-mail, пожалуйста">
+            </label>
           </div>
         </div>
 
-        <div class="fieldset">
-          <h2 class="fieldset__text  fieldset__text--title">Опишите свои эмоции</h2>
-          <textarea class="fieldset__textarea" name="user-review" placeholder="Можно прям в красках, не стесняясь в
-          выражениях"></textarea>
+        <div class="form__device-container">
+          <div class="fieldset">
+            <h2 class="fieldset__text  fieldset__text--title">С каким приложением путешествовали?</h2>
+
+            <div class="fieldset__devices-element">
+              <input class="fieldset__radio" type="radio" id="first-device-iOS" name="user-device" checked>
+              <label class="form__user-devices-text" for="first-device-iOS">Pink для iOS</label>
+            </div>
+
+            <div class="fieldset__devices-element">
+              <input class="fieldset__radio" type="radio" id="second-device-android" name="user-device">
+              <label class="form__user-devices-text" for="second-device-android">Pink на Android</label>
+            </div>
+
+            <div class="fieldset__devices-element">
+              <input class="fieldset__radio" type="radio" id="third-device-windows" name="user-device">
+              <label class="form__user-devices-text" for="third-device-windows">Windows Phone</label>
+            </div>
+          </div>
         </div>
 
-        <button type="submit" class="fieldset__submit-btn">Отправить форму</button>
-        <p><span class="fieldset__star">*</span> &mdash; обязательные поля</p>
+        <div class="form__user-review-container">
+          <div class="fieldset">
+            <h2 class="fieldset__text  fieldset__text--title">Опишите свои эмоции</h2>
+            <textarea class="fieldset__textarea" name="user-review" placeholder="Можно прям в красках, не стесняясь в
+            выражениях"></textarea>
+
+            <button type="submit" class="fieldset__submit-btn">Отправить форму</button>
+            <div class="fieldset__text-required-fields"><span class="fieldset__star">*</span> &mdash; обязательные поля</div>
+          </div>
+        </div>
 
 
 

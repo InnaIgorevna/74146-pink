@@ -13,3 +13,31 @@
     display: none;
   }
 }
+
+@media @tablet-widths {
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__user-initials-container {
+      order: 1;
+    }
+
+    &__device-container {
+      order: 2;
+    }
+
+    &__contact-information-container {
+      order: 3;
+    }
+
+    &__user-achievements-container {
+      order: 4;
+    }
+
+    &__user-review-container {
+      order: 5;
+    }
+  }
+}
