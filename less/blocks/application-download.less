@@ -1,13 +1,13 @@
+
 .application-download {
-  .padding();
-  .outline();
 
   &__link {
     display: block;
-    width: 281px;
-    height: 55px;
-    .outline();
+    width: 293px;
+    height: 49px;
     margin: 20px auto;
+    border: 3px solid #000000;
+    border-radius: 26px;
   }
 
   &__apps-list li{
@@ -24,8 +24,14 @@
 @media @tablet-widths {
   .application-download {
     max-width: 40%;
-    height: 240px;
-    padding: 10px;
     float: left;
+  }
+}
+
+@media @desktop-widths {
+  .application-download {
+    .outline();
+    margin-left: 120px;
+    height: 300px;
   }
 }

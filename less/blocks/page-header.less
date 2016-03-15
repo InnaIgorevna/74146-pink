@@ -1,9 +1,25 @@
-.page-header{
+.page-header {
   width: 100%;
 
-  &__toggle-menu{
-    height: 66px;
+  &__toggle-menu {
     text-align: left;
     .outline();
+    height: 66px;
+  }
+}
+
+@media @tablet-widths {
+  .page-header {
+    &__toggle-menu {
+      height: 110px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .page-header {
+    &__toggle-menu {
+      display: none;
+    }
   }
 }

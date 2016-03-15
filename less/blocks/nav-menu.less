@@ -1,4 +1,22 @@
+
 .nav-menu {
-  display: none;
   .outline();
+  display: none;
+
+}
+
+@media @desktop-widths {
+  .nav-menu {
+    display: flex;
+    flex-direction: row-reverse;
+
+    &__list {
+      display: flex;
+      justify-content: space-around;
+      width: 620px;
+      height: 110px;
+      .outline();
+    }
+  }
+
 }
