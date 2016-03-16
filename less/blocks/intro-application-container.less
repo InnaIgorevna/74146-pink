@@ -5,8 +5,36 @@
   width: 100%;
 }
 
+@media @tablet-widths {
+  .intro-application-container {
+    &__hand-phone-picture {
+      position: absolute;
+      width: 47%;
+      height: 100%;
+      background-color: #0000AA;
+      order: 2;
+      right: 10px;
+      z-index: 10;
+      top: 0px;
+    }
+  }
+}
+
 @media @desktop-widths {
   .intro-application-container {
     height: 745px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+    &__hand-phone-picture {
+      position: absolute;
+      width: 47%;
+      height: 650px;
+      background-color: #0000AA;
+      order: 2;
+      right: 160px;
+      z-index: 10;
+      top: 95px;
+    }
   }
 }

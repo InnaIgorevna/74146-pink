@@ -1,5 +1,6 @@
 .intro {
   width: 100%;
+  height: 285px;
   .outline();
   position: relative;
 
@@ -14,14 +15,19 @@
 }
 
 @media @tablet-widths {
-  .intro {
-    width: 46%;
+  .intro--main{
+    width: 50%;
   }
 }
 
 @media @desktop-widths {
-  .intro {
-    width: 46%;
-    height: 310px;
+  .intro--main {
+    position: absolute;
+    width: 30%;
+    height: 200px;
+    order: 3;
+    z-index: 5;
+    top: 115px;
+    left: 100px;
   }
 }
