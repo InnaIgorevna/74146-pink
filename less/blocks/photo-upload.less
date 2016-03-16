@@ -1,3 +1,4 @@
+
 .photo-upload {
   .outline();
   .padding();
@@ -35,6 +36,19 @@
 
     &__tools-list li{
       display: block;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .photo-upload {
+    &__send {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__link {
+      width: 200px;
     }
   }
 }
