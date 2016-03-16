@@ -53,9 +53,10 @@
         </div>
 
         <div class="form__user-achievements-container">
-          <div class="fieldset">
-            <h2 class="fieldset__text  fieldset__text--title">Ваши безбашенные достижения в путешествии</h2>
 
+          <h2 class="form__user-achievements-text  form__user-achievements-text--title">Ваши безбашенные достижения в путешествии</h2>
+
+          <div class="fieldset  fieldset--checkbox-block-container">
             <div class="fieldset__checkbox-block">
               <input class="fieldset__checkbox" id="first-achievement-selfie" type="checkbox" checked>
               <label class="fieldset__checkbox-label" for="first-achievement-selfie">Сделал селфи с акулой</label>
@@ -122,13 +123,20 @@
         </div>
 
         <div class="form__user-review-container">
+
+          <h2 class="form__user-review-text  form__user-review-text--title">Опишите свои эмоции</h2>
+
           <div class="fieldset">
-            <h2 class="fieldset__text  fieldset__text--title">Опишите свои эмоции</h2>
             <textarea class="fieldset__textarea" name="user-review" placeholder="Можно прям в красках, не стесняясь в
             выражениях"></textarea>
+          </div>
+        </div>
 
-            <button type="submit" class="fieldset__submit-btn">Отправить форму</button>
-            <div class="fieldset__text-required-fields"><span class="fieldset__star">*</span> &mdash; обязательные поля</div>
+        <div class="form__submit-container">
+            <button type="submit" class="form__submit-btn">Отправить форму</button>
+
+          <div class="form__submit-text-required-fields">
+            <span class="form__submit-star">*</span> &mdash; обязательные поля
           </div>
         </div>
 

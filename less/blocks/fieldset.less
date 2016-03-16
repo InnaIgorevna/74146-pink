@@ -29,11 +29,7 @@
     text-align: center;
   }
 
-  &__submit-btn {
-    width: 280px;
-    height: 63px;
-    margin: 40px auto;
-  }
+
 }
 
 @media @tablet-widths {
@@ -47,6 +43,19 @@
 
     &__input {
       width: 93%;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .fieldset {
+    &--checkbox-block-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__checkbox-block {
+      width: 250px;
     }
   }
 }
