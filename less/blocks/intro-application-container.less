@@ -3,6 +3,7 @@
   .outline();
   position: relative;
   width: 100%;
+  height: 285px;
 }
 
 @media @tablet-widths {
@@ -11,26 +12,27 @@
       position: absolute;
       width: 47%;
       height: 100%;
-      background-color: #0000AA;
       order: 2;
       right: 10px;
       z-index: 10;
-      top: 0px;
+      top: 0;
     }
   }
 }
 
 @media @desktop-widths {
   .intro-application-container {
-    height: 745px;
     display: flex;
     flex-wrap: wrap-reverse;
+
+    &--main {
+      height: 745px;
+    }
 
     &__hand-phone-picture {
       position: absolute;
       width: 47%;
       height: 650px;
-      background-color: #0000AA;
       order: 2;
       right: 160px;
       z-index: 10;
