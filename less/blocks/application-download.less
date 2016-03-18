@@ -1,37 +1,69 @@
 
 .application-download {
+  height: 330px;
+  margin: 0 auto;
+  .outline();
+  background-color: #8a8a8a;
+
   &__link {
     display: block;
     width: 293px;
-    height: 49px;
+    height: 17px;
     margin: 20px auto;
-    border: 3px solid #000000;
+    border: 3px solid #ffffff;
     border-radius: 26px;
+    color: #ffffff;
+    font-family:"opensans", Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 17px 0;
+  }
+
+  &__apps-list {
+    margin-top: 60px;
   }
 
   &__apps-list li{
     .inline-block();
+    margin: 10px;
   }
 
   &__text{
-    width: 229px;
+    width: 300px;
     height: 37px;
-    margin: 30px auto;
+    margin: 34px auto;
+    color: #ffffff;
+    font-family:"opensans", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}
+
+@media @mobile-widths-only {
+  .application-download {
+    margin-left: 0;
+    background-color: #1d2631;
   }
 }
 
 @media @tablet-widths {
   .application-download {
-    max-width: 40%;
+    margin-left: 38px;
+    order: 1;
+    margin-bottom: 44px;
+  }
+
+  &__apps-list {
+    margin-top: 38px;
   }
 }
 
 @media @desktop-widths {
   .application-download {
-    .outline();
     margin-left: 130px;
-    height: 300px;
     order: 1;
-    margin-bottom: 125px;
+    margin-bottom: 94px;
   }
 }
