@@ -1,5 +1,4 @@
 .page-header {
-  width: 100%;
   position: relative;
   z-index: 50;
 
@@ -8,20 +7,30 @@
     .outline();
     height: 66px;
   }
-}
 
-@media @tablet-widths {
-  .page-header {
-    &__toggle-menu {
-      height: 110px;
+  @media @mobile-widths-only {
+    .page-header {
+      &__toggle-menu {
+        .outline();
+        width: 320px;
+      }
+    }
+  }
+
+  @media @tablet-widths {
+    .page-header {
+      &__toggle-menu {
+        height: 110px;
+      }
+    }
+  }
+
+  @media @desktop-widths {
+    .page-header {
+      &__toggle-menu {
+        display: none;
+      }
     }
   }
 }
 
-@media @desktop-widths {
-  .page-header {
-    &__toggle-menu {
-      display: none;
-    }
-  }
-}

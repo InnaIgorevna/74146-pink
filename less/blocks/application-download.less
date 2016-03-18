@@ -1,27 +1,29 @@
 
 .application-download {
-  height: 330px;
+  width: 320px;
+  height: 305px;
   margin: 0 auto;
   .outline();
-  background-color: #8a8a8a;
+  background-color: #1d7031;
+  margin-top: 459px;
 
   &__link {
     display: block;
     width: 293px;
     height: 17px;
-    margin: 20px auto;
+    margin: 16px auto;
     border: 3px solid #ffffff;
     border-radius: 26px;
     color: #ffffff;
     font-family:"opensans", Arial, sans-serif;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 18px;
     padding: 17px 0;
   }
 
   &__apps-list {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   &__apps-list li{
@@ -32,7 +34,7 @@
   &__text{
     width: 300px;
     height: 37px;
-    margin: 34px auto;
+    margin: 15px auto;
     color: #ffffff;
     font-family:"opensans", Arial, sans-serif;
     font-size: 18px;
@@ -45,14 +47,14 @@
   .application-download {
     margin-left: 0;
     background-color: #1d2631;
+    margin-top: 459px;
   }
 }
 
 @media @tablet-widths {
   .application-download {
-    margin-left: 38px;
-    order: 1;
-    margin-bottom: 44px;
+    margin-left: 28px;
+    margin-top: 228px;
   }
 
   &__apps-list {
@@ -62,8 +64,19 @@
 
 @media @desktop-widths {
   .application-download {
-    margin-left: 130px;
-    order: 1;
-    margin-bottom: 94px;
+    margin-left: 118px;
+    margin-top: 272px;
+
+    &__link {
+      font-size: 21px;
+    }
+
+    &__apps-list {
+      margin-top: 55px;
+    }
+
+    &__text {
+      margin: 41px auto;
+    }
   }
 }

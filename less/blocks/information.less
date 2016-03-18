@@ -1,10 +1,18 @@
 
 .information {
-  width: 100%;
   .outline();
 
+  &__container-title {
+    width: 300px;
+    font-family:"opensans", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0 auto;
+    margin-top: 340px;
+  }
+
   &__title {
-    padding: 45px;
+    margin-bottom: 30px;
   }
 
   &__picture--index {
@@ -14,8 +22,21 @@
 
 @media @tablet-widths {
   .information {
+    &__container-title {
+      font-size: 40px;
+    }
+
+    &__container-title {
+      width: 620px;
+      margin-top: 60px;
+    }
+
     &__title {
-      padding: 0 163px;
+      margin-bottom: 0;
+    }
+
+    &__title--flacky {
+      padding: 0 30px;
     }
 
     &__article-container {
@@ -37,6 +58,10 @@
 
 @media @desktop-widths {
   .information {
+    &__container-title {
+      width: 760px;
+    }
+
     &__title {
       font-size: 50px;
     }
@@ -65,7 +90,6 @@
     }
 
     &__picture-iphone {
-
       display: inline-flex;
     }
   }

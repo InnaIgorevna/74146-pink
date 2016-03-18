@@ -1,3 +1,6 @@
+.intro {
+  display: none;
+}
 
 @media @mobile-widths-only {
   .intro {
@@ -7,6 +10,7 @@
 
 @media @tablet-widths{
   .intro {
+    display: block;
     &__title {
       color: #ffffff;
       font-family:"opensans", Arial, sans-serif;
@@ -14,16 +18,15 @@
       line-height: 50px;
       font-weight: 300;
       .outline();
-      background-color: #00AA00;
     }
 
     &--main{
       position: relative;
       width: 30%;
       height: 150px;
-      left: 83px;
-      top: 368px;
-      order: 3;
+      left: 88px;
+      top: 203px;
+      background-color: #00AA00;
     }
   }
 }
@@ -31,13 +34,14 @@
 @media @desktop-widths {
   .intro {
     &--main {
-      width: 24%;
+      height: 177px;
       left: 136px;
-      top: 202px;
+      top: 220px;
     }
 
     &__title {
       font-size: 50px;
+      line-height: 59px;
     }
   }
 }
