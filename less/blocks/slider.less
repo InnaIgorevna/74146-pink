@@ -1,10 +1,6 @@
 .slider {
-  .outline();
-
   &__control {
-    position: relative;
-    margin: 30px auto;
-
+    margin: 16px auto;
   }
 
   &__control-element {
@@ -14,9 +10,34 @@
     border: 2px solid #ffffff;
     background-color: #bec2c7;
     border-radius: 50%;
+    margin: 0 6px;
   }
 
   &__control-element--active {
-    border: 2px solid #283645;
+    border: 3px solid #283645;
+  }
+
+  &__control--price {
+    margin: 27px auto;
+  }
+}
+
+@media @tablet-widths {
+  .slider {
+    &__control {
+      margin: 22px auto;
+    }
+
+    &__control--price {
+      display: none;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .slider {
+    &__control {
+      display: none;
+    }
   }
 }

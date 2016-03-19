@@ -1,7 +1,7 @@
 
 .review {
   &__item {
-    padding: 20px;
+    padding: 38px 10px 20px;
   }
 
   &__author {
@@ -10,13 +10,69 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
+    margin-bottom: 12px;
+  }
+
+  &__employment {
+    display: none;
   }
 
   &__story {
-    color: #283645;
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
   }
 
+  &__picture {
+    display: none;
+  }
+}
+
+@media @tablet-widths {
+  .review {
+    &__item {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 72px 10px 20px;
+    }
+
+    &__employment {
+      display: block;
+      font-size: 14px;
+    }
+
+    &__story {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      margin-bottom: 36px;
+    }
+
+  }
+}
+
+@media @desktop-widths {
+  .review {
+    &__item {
+      width: 72%;
+      margin: 60px auto 0 auto;
+    }
+
+    &__author {
+      font-size: 24px;
+    }
+
+    &__employment {
+      display: block;
+      font-size: 18px;
+    }
+
+    &__story {
+      margin-top: 45px;
+    }
+
+    &__picture {
+      display: block;
+    }
+  }
 }

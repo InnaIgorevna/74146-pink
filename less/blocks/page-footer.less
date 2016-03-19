@@ -1,7 +1,5 @@
-.page-footer {
-  .outline();
-  .padding();
 
+.page-footer {
   &__copyright-list li {
     .inline-block();
   }
@@ -15,17 +13,22 @@
     display: block;
     width: 50px;
   }
-}
 
-@media @mobile-widths-only {
-  .page-footer-container {
+  &__container {
     display: none;
   }
 }
 
 @media @tablet-widths {
-  .page-footer-container {
-    display: flex;
-    justify-content: space-between;
+  .page-footer {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      height: 130px;
+    }
+
+    &__copyright {
+      width: 300px;
+    }
   }
 }

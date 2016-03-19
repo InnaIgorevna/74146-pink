@@ -59,7 +59,7 @@
         </div>
 
         <div class="information__article-container">
-          <div class="information__article-container-interior">
+          <div class="information__article-container-inner">
             <div class="information__article">
               <h2 class="information__article-title">Поднимает настроение</h2>
               <p class="information__article-story">
@@ -83,10 +83,10 @@
 
           <div class="information__picture">
             <div class="information__picture-iphone information__picture--index">
-              <img src="http://placehold.it/160x320">
+              <img src="http://placehold.it/186x382">
             </div>
             <div class="information__picture-iphone information__picture--index">
-              <img src="http://placehold.it/160x320">
+              <img src="http://placehold.it/186x382">
             </div>
             <div class="information__picture-iphone"></div>
           </div>
@@ -94,35 +94,39 @@
       </div>
 
       <div class="research">
-        <div class="research__picture">
-          <img src="http://placehold.it/240x280">
-        </div>
+        <div class="research__research-container">
+          <div class="research__picture">
+            <img src="http://placehold.it/240x280">
+          </div>
 
-        <div class="research__text">
-          <h2 class="research__title">Эффект на 24 часа!</h2>
+          <div class="research__text">
+            <h2 class="research__title">Эффект на 24 часа!</h2>
 
-          <p class="research__story">
-            Британские ученые провели исследования
-            и доказали, что положительный эффект
-            от использования приложения длится
-            целые сутки!
-          </p>
-          <a class="research__link" href="#">Узнать больше об исследовании</a>
+            <p class="research__story">
+              Британские ученые провели исследования
+              и доказали, что положительный эффект
+              от использования приложения длится
+              целые сутки!
+            </p>
+            <a class="research__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </div>
-
-
-
 
       <div class="review">
         <div class="slider">
           <div class="slider__list">
             <div class="review__item">
-              <h2 class="review__author">Николай Петров</h2>
+              <div class="review__user">
+                <h2 class="review__author">Николай Петров</h2>
+                <p class="review__employment">25 лет, водитель трамвая</p>
+              </div>
               <p class="review__story">
                 &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
                 А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
               </p>
+
+              <div class="review__picture"><img src="http://placehold.it/80x63"></div>
             </div>
             <!--<div class="review__item">
               <h2 class="review__author">Lorem ipsum</h2>
@@ -154,25 +158,25 @@
           <div class="slider__list">
             <table class="price__table">
               <tr>
-                <th class="price__table-head  price__table-head--hot">
+                <th class="price__table-head-invisible">
 
                 </th>
                 <th class="price__table-head  price__table-head--hot">
-                  <span class="price__table-head-name">база</span>
-                  <span class="price__table-head-price">1,99 USD</span>
+                  <p class="price__table-head-name">база</p>
+                  <p class="price__table-head-price">1,99 USD</p>
                 </th>
                 <th class="price__table-head  price__table-head--hot">
-                  <span class="price__table-head-name">стандарт</span>
-                  <span class="price__table-head-price">3,99 USD</span>
+                  <p class="price__table-head-name">стандарт</p>
+                  <p class="price__table-head-price">3,99 USD</p>
                 </th>
                 <th class="price__table-head  price__table-head--hot">
-                  <span class="price__table-head-name">анлим</span>
-                  <span class="price__table-head-price">9,99 USD</span>
+                  <p class="price__table-head-name">анлим</p>
+                  <p class="price__table-head-price">9,99 USD</p>
                 </th>
               </tr>
               <tr>
                 <td>
-                  <span class="price__table-option">Розовый фильтр</span>
+                  <p class="price__table-option">Розовый фильтр</p>
                 </td>
                 <td>
                   <i class="price__table-option-icon  price__table-option-icon--included"></i>
@@ -186,7 +190,7 @@
               </tr>
               <tr>
                 <td>
-                  <span class="price__table-option">Смайлик</span>
+                  <p class="price__table-option">Смайлик</p>
                   <i class="price__table-option-icon  price__table-option-icon--included"></i>
                 </td>
                 <td>
@@ -201,7 +205,7 @@
               </tr>
               <tr>
                 <td>
-                  <span class="price__table-option">Комментарии</span>
+                  <p class="price__table-option">Комментарии</p>
                   <i class="price__table-option-icon  price__table-option-icon--excluded"></i>
                 </td>
                 <td>
@@ -217,9 +221,9 @@
             </table>
           </div>
 
-          <ul class="slider__control">
-            <li class="slider__control-element  slider__control-element--active"></li>
+          <ul class="slider__control  slider__control--price">
             <li class="slider__control-element"></li>
+            <li class="slider__control-element  slider__control-element--active"></li>
             <li class="slider__control-element"></li>
           </ul>
         </div>
@@ -227,30 +231,32 @@
     </main>
 
 
-    <footer class="main-page-footer">
-      <h2 class="main-page-footer__title">Остались вопросы? Свяжитесь с нами</h2>
-      <div class="main-page-footer__contacts">
-        <div class="main-page-footer__contact">
-          <h2 class="main-page-footer__contact-text">Звоните:</h2>
-          <span class="main-page-footer__contact-value">+7(812)555-66-66</span>
+    <footer class="page-footer">
+      <div class="main-page-footer">
+        <h2 class="main-page-footer__title">Остались вопросы? Свяжитесь с нами</h2>
+        <div class="main-page-footer__contacts">
+          <div class="main-page-footer__contact  main-page-footer__contact--phone">
+            <h2 class="main-page-footer__contact-text">Звоните:</h2>
+            <span class="main-page-footer__contact-value">+7(812)555-66-66</span>
+          </div>
+
+          <div class="main-page-footer__contact  main-page-footer__contact--email">
+            <h2 class="main-page-footer__contact-text">Пишите:</h2>
+            <a href="#" class="main-page-footer__contact-value">mail@htmlacademy.ru</a>
+          </div>
+
+          <div class="main-page-footer__contact  main-page-footer__contact--address">
+            <h2 class="main-page-footer__contact-text">Приезжайте в гости:</h2>
+            <span class="main-page-footer__contact-value">ул. Большая Конюшенная, 19/8 </span>
+          </div>
         </div>
 
-        <div class="main-page-footer__contact">
-          <h2 class="main-page-footer__contact-text">Пишите:</h2>
-          <a href="#" class="main-page-footer__contact-value">mail@htmlacademy.ru</a>
-        </div>
-
-        <div class="main-page-footer__contact">
-          <h2 class="main-page-footer__contact-text">Приезжайте в гости:</h2>
-          <span class="main-page-footer__contact-value">ул. Большая Конюшенная, 19/8 </span>
+        <div class="address-map">
+          <div class="address-map__decorative-element"></div>
         </div>
       </div>
 
-      <div class="address-map">
-        <iframe src="#" frameborder="0"></iframe>
-      </div>
-
-      <div class="page-footer-container">
+      <div class="page-footer__container">
         <div class="logo">
           <a href="#"><img src="http://placehold.it/160x60"/></a>
         </div>
