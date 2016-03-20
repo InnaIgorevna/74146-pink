@@ -1,5 +1,39 @@
 .posts {
-  .outline();
+  margin-bottom: 44px;
+
+  &__intro-posts {
+    height: 140px;
+    margin-top: 47px;
+  }
+
+  &__intro-posts-text {
+    padding: 0 37px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+  }
 }
 
+@media @tablet-widths {
+  .posts {
+    width: 100%;
+    border: 1px solid #000000;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+
+    &__intro-posts {
+      margin-top: 90px;
+      height: 130px;
+    }
+
+
+    &__intro-posts-text {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      padding: 0 45px;
+    }
+  }
+}
 

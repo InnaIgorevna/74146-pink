@@ -4,25 +4,20 @@
   .outline();
   text-align: left;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 
-  &__intro-posts {
-    height: 185px;
-    margin-top: 100px;
-    color: #0b97c4;
-  }
-
-  &__intro-posts-text {
-    padding: 0 40px;
-    color: #0b97c4;
-  }
 
   &__author {
-    padding: 0 19px;
+    padding: 0 15px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   &__author--best-post {
-    padding: 0 39px;
-    padding-bottom: 20px;
+    padding: 0 35px 20px 35px;
   }
 
   &--overall-width {
@@ -31,14 +26,24 @@
 
   &__picture{
     width: 100%;
-    height: 180px;
+    /*height: 180px;*/
     margin-bottom: 20px;
+    flex-grow: 0;
   }
 
   &__picture--full-width {
     width: 320px;
-    height: 137px;
+    /*height: 137px;*/
+    background: url("../img/panorama-mobile.jpg")no-repeat;
     position: relative;
+  }
+
+  &__text {
+    margin-bottom: 7px;
+  }
+
+  &__like {
+    vertical-align: bottom;
   }
 
   &__author-name {
@@ -53,26 +58,37 @@
 
   &__like-text {
     color: #d22856;
-    margin-top: 7px;
   }
 }
 
 @media @tablet-widths {
-  .posts {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
 
   .post {
-    width: 320px;
-    margin: 10px auto;
-    &__picture--full-width img{
+    width: 300px;
+    /*margin-bottom: 30px;*/
+    padding: 20px 0 20px 0;
+
+    &__picture--full-width {
       width: 100%;
+      height: 510px;
+      background-size: 100% 100%;
     }
 
     &--overall-width {
       width: 100%;
+    }
+
+    &__picture img{
+      width: 100%;
+      height: 300px;
+    }
+
+    &__author {
+      /*margin-top: 25px;*/
+    }
+
+    &__author--best-post {
+      margin-top: 0;
     }
   }
 }
