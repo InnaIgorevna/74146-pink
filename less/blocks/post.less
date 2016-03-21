@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
 
-
   &__author {
     padding: 0 15px;
     display: flex;
@@ -27,7 +26,7 @@
 
   &__picture{
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px; //*****//
     flex-grow: 0;
   }
 
@@ -39,7 +38,7 @@
   }
 
   &__text {
-    margin-bottom: 7px;
+    margin-bottom: 5px;//****//
   }
 
   &__like {
@@ -64,8 +63,8 @@
 @media @tablet-widths {
   .post {
     width: 300px;
-    margin-bottom: 20px;
-    padding: 5px 0 20px 0;
+    margin-bottom: 30px;
+    padding: 0 0 20px 0;
 
     &__picture--full-width {
       width: 100%;
@@ -75,7 +74,11 @@
 
     &--overall-width {
       width: 100%;
-      margin-bottom: 0;
+      margin-bottom: 30px;
+    }
+
+    &__picture{
+      margin-bottom: 20px; //*****//
     }
 
     &__picture img{
@@ -84,11 +87,32 @@
     }
 
     &__author {
-      /*margin-top: 25px;*/
+      padding: 0 20px;
     }
 
     &__author--best-post {
       margin-top: 0;
+    }
+  }
+}
+
+
+@media @desktop-widths {
+  .post {
+    margin-bottom: 40px;
+    padding: 20px 0 20px 0;
+
+    &--overall-width {
+      margin-bottom: 0;
+    }
+
+    &__picture img{
+      width: 100%;
+      height: 400px;
+    }
+
+    &__author--best-post {
+      padding: 0 35px 0 35px;
     }
   }
 }

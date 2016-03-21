@@ -1,5 +1,9 @@
 
 .page-footer {
+  &__copyright {
+    .margin-block-footer();
+  }
+
   &__copyright-list {
     display: flex;
     justify-content: center;
@@ -33,7 +37,7 @@
     }
 
     &__copyright {
-      width: 300px;
+      width: 250px;
       height: 60px;
     }
 
@@ -45,5 +49,11 @@
       display: flex;
       justify-content: space-between;
     }
+  }
+}
+
+@media @desktop-widths {
+  .page-footer {
+    margin-top: 40px;
   }
 }
