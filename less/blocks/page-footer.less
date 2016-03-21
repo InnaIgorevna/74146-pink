@@ -1,7 +1,8 @@
 
 .page-footer {
-  &__copyright-list li {
-    .inline-block();
+  &__copyright-list {
+    display: flex;
+    justify-content: center;
   }
 
   &__copyright-text {
@@ -23,6 +24,7 @@
 
 @media @tablet-widths {
   .page-footer {
+    margin-top: 20px;
     &__container {
       display: flex;
       justify-content: space-between;
@@ -37,6 +39,11 @@
 
     &__copyright-list {
       margin-top: 11px;
+    }
+
+    &__page-footer-inner-container {
+      display: flex;
+      justify-content: space-between;
     }
   }
 }
