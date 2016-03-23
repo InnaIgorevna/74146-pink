@@ -15,6 +15,16 @@
     line-height: 30px;
     text-transform: uppercase;
     margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+  }
+
+  &__text--title-checkbox {
+    line-height: 20px;
+  }
+
+  &__text-hidden {
+    display: none;
   }
 
   &__text--title {
@@ -23,6 +33,10 @@
     padding: 0 15px;
     margin-left: 0;
     margin-bottom: 35px;
+  }
+
+  &__text--title-contact {
+    display: none;
   }
 
   &__input {
@@ -78,18 +92,30 @@
     height: 200px;
     border: 2px solid #e5e5e5;
     text-align: center;
-    margin-top: -20px;
     color: #283645;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
     padding-top: 15px;
+    margin-top: 5px;
   }
 }
 
 @media @tablet-widths {
   .fieldset {
     position: relative;
+    text-align: center;
+
+    &--contact-information {
+      padding: 45px 60px 0 60px;
+      text-align: center;
+    }
+
+    &--checkbox-block-container {
+      padding: 15px 60px 0 60px;
+      margin-bottom: 70px;
+    }
+
     &__input {
       width: 80.8%;
       border: 1px solid #000;
@@ -98,6 +124,34 @@
 
     &__input--correct {
       width: 87.4%;
+    }
+
+    &__item-contact {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: 15px;
+    }
+
+    &__input--contact-information {
+      width: 96%;
+      margin: 0;
+    }
+
+    &__text-hidden-mobile {
+      display: none;
+    }
+
+    &__text-hidden {
+      display: block;
+      color: #d22856;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    &__text--contact-information {
+      text-align: left;
+      line-height: 55px;
+      padding-left: 20px;
     }
 
     &__text {
@@ -120,6 +174,7 @@
     &__text--title {
       display: block;
       position: absolute;
+      margin-right: 0;
       width: 370px;
       background-color: #FFFFFF;
       top: -10px;
@@ -128,12 +183,34 @@
       padding: 0;
     }
 
+    &__text--title-contact {
+      .frame-header();
+      width: 265px;
+    }
+
+    &__text--title-checkbox {
+      .frame-header();
+      width: 435px;
+      line-height: 30px;
+    }
+
+    &__text--title-user-review{
+      .frame-header();
+      width: 235px;
+    }
+
+    &__text--title-device {
+      width: 65px;
+    }
+
     &__radio-label {
       margin-left: -11px;
     }
 
     &__textarea {
-      width: 80%;
+      width: 86%;
+      height: 175px;
+      margin: 45px auto;
     }
   }
 }

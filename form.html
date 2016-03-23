@@ -38,7 +38,7 @@
           <p class="intro-inner__text  intro-inner__text--hidden">Пожалуйста, заполните форму ниже:</p>
         </div>
 
-        <div class="form__user-initials-container">
+        <div class="form__container  form__container--user-initials-container">
           <div class="fieldset">
             <label class="fieldset__label">
               <span class="fieldset__text">Имя:</span>
@@ -57,9 +57,9 @@
           </div>
         </div>
 
-        <div class="form__user-achievements-container">
+        <div class="form__container  form__container--user-achievements-container">
           <div class="fieldset  fieldset--checkbox-block-container">
-            <h2 class="fieldset__text  fieldset__text--title">Ваши безбашенные достижения в путешествии</h2>
+            <h2 class="fieldset__text  fieldset__text--title-checkbox">Ваши безбашенные достижения в путешествии</h2>
 
             <div class="fieldset__checkbox-block">
               <input class="fieldset__checkbox" id="first-achievement-selfie" type="checkbox" checked>
@@ -93,19 +93,23 @@
           </div>
         </div>
 
-        <div class="form__contact-information-container">
-          <div class="fieldset">
-            <label><span class="fieldset__text">Номерок телефончика</span>
-              <input class="fieldset__input" type="text" placeholder="Номер, пожалуйста">
-            </label>
-
-            <label><span class="fieldset__text">адресок почты</span>
-              <input class="fieldset__input" type="text" placeholder="E-mail, пожалуйста">
-            </label>
+        <div class="form__container  form__container--contact-information-container">
+          <div class="fieldset  fieldset--contact-information">
+            <h2 class="fieldset__text  fieldset__text--title-contact">Контактная информация</h2>
+            <div class="fieldset__item-contact">
+              <span class="fieldset__text  fieldset__text-hidden-mobile">Номерок телефончика</span>
+              <span class="fieldset__text-hidden  fieldset__text--contact-information">Номер телефона</span>
+              <input class="fieldset__input  fieldset__input--contact-information" type="text" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
+            </div>
+            <div class="fieldset__item-contact">
+              <span class="fieldset__text  fieldset__text-hidden-mobile">Aдресок почты</span>
+              <span class="fieldset__text-hidden  fieldset__text--contact-information">Адрес почты</span>
+              <input class="fieldset__input  fieldset__input--contact-information" type="text" placeholder="Введите почту">
+            </div>
           </div>
         </div>
 
-        <div class="form__device-container  form__device-container--correct">
+        <div class="form__container  form__container--device-container">
           <div class="fieldset">
             <h2 class="fieldset__text  fieldset__text--title">С каким приложением путешествовали?</h2>
 
@@ -126,16 +130,16 @@
           </div>
         </div>
 
-        <div class="form__user-review-container">
+        <div class="form__container  form__container--user-review">
           <div class="fieldset">
-            <h2 class="fieldset__text  fieldset__text--title">Опишите свои эмоции</h2>
+            <h2 class="fieldset__text  fieldset__text--title-user-review">Опишите свои эмоции</h2>
 
             <textarea class="fieldset__textarea" name="user-review"
                       placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
         </div>
 
-        <div class="form__submit-container">
+        <div class="form__container  form__container--submit">
             <button type="submit" class="form__submit-btn">Отправить форму</button>
 
           <div class="form__submit-text-required-fields">
@@ -166,7 +170,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer-container">
+      <div class="page-footer__page-footer-inner-container">
         <div class="logo">
           <a href="#"><img src="http://placehold.it/160x60"/></a>
         </div>
