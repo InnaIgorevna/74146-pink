@@ -1,8 +1,12 @@
 
 .fieldset {
-  border: 1px solid #000000;
+
   padding: 0 20px;
   text-align: left;
+
+  &--user-initials {
+    border: 2px solid #ffffff;
+  }
 
   &__label {
     margin-top: 10px;
@@ -105,6 +109,7 @@
   .fieldset {
     position: relative;
     text-align: center;
+    border: 2px solid #e5e5e5;
 
     &--contact-information {
       padding: 45px 60px 0 60px;
@@ -118,7 +123,6 @@
 
     &__input {
       width: 80.8%;
-      border: 1px solid #000;
       margin-bottom: 50px;
     }
 
@@ -218,7 +222,6 @@
 
     &__input {
       width: 70%;
-      border: 1px solid #000;
       margin-bottom: 50px;
     }
 
@@ -230,6 +233,7 @@
       display: flex;
       justify-content: space-around;
       margin-bottom: 70px;
+      padding: 45px 0 0 0;
     }
 
     &__input--contact-information {
@@ -262,7 +266,8 @@
 
     &__textarea {
       height: 110px;
-      border: 1px solid #000000;
+      text-align: left;
+      padding-left: 20px;
     }
 
   }

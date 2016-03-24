@@ -1,7 +1,14 @@
 
 .review {
+  display: flex;
+  justify-content: flex-start;
+  width: 2000px;
+  margin-left: -150px;
+
   &__item {
     padding: 38px 10px 20px;
+    width: 300px;
+    margin-left: 150px;
   }
 
   &__author {
@@ -30,10 +37,13 @@
 
 @media @tablet-widths {
   .review {
+    margin-left: -85px;
+
     &__item {
       display: flex;
       flex-direction: column-reverse;
       padding: 72px 10px 20px;
+      width: 660px;
     }
 
     &__employment {
@@ -53,9 +63,11 @@
 
 @media @desktop-widths {
   .review {
+    margin-left: -10px;
+
     &__item {
-      width: 72%;
       margin: 60px auto 0 auto;
+      width: 960px;
     }
 
     &__author {

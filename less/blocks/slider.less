@@ -1,4 +1,9 @@
 .slider {
+  &__list {
+    overflow: hidden;
+    width: 320px;
+  }
+
   &__control {
     margin: 16px auto;
     display: flex;
@@ -25,6 +30,11 @@
 
 @media @tablet-widths {
   .slider {
+
+    &__list {
+      width: 660px;
+    }
+
     &__control {
       margin: 22px auto;
     }
@@ -37,6 +47,15 @@
 
 @media @desktop-widths {
   .slider {
+
+    &__list {
+      width: 650px;
+    }
+
+    &__list--table {
+      width: 960px;
+    }
+
     &__control {
       display: none;
     }
