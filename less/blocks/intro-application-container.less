@@ -23,7 +23,13 @@
 @media @tablet-widths {
   .intro-application-container {
     width: 100%;
-    height: 440px;
+    height: 450px;
+
+    &--intro-application-correct {
+      margin-top: -40px;
+      background: transparent url("../img/bg-back-tablet@2x.jpg") center -10px no-repeat;
+      background-size: auto 740px;
+    }
 
     &--main {
       height: 750px;
@@ -48,6 +54,12 @@
 @media @desktop-widths {
   .intro-application-container {
     height: 395px;
+
+    &--intro-application-correct {
+      width: 100%;
+      background: transparent url("../img/bg-back-tablet@2x.jpg") center -413px no-repeat;
+      background-size: auto;
+    }
 
     &--main {
       height: 875px;
