@@ -1,5 +1,7 @@
 
 .post {
+  width: 280px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 24px;
   text-align: left;
@@ -20,7 +22,9 @@
   }
 
   &--overall-width {
+    width: 320px;
     padding: 0;
+    margin-bottom: 8px;
   }
 
   &__picture{
@@ -30,9 +34,10 @@
   }
 
   &__picture--full-width {
-    width: 320px;
+    min-width: 320px;
     height: 137px;
-    background: url("../img/panorama-mobile.jpg")no-repeat;
+    background: url("../img/panorama-mobile.jpg")no-repeat center;
+    background-size: 100% 100%;
     position: relative;
   }
 
