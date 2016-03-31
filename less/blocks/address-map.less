@@ -2,6 +2,12 @@
 .address-map {
   position: relative;
   min-width: 320px;
+  height: 200px;
+  background-color: #F4E2B0;
+
+  &__iframe {
+    background-color: #F4E2B0;
+  }
 
   &__decorative-element:before, &__decorative-element:after{
     content: "";
@@ -28,6 +34,8 @@
 
 @media @tablet-widths {
   .address-map {
+    height: 380px;
+
     &__iframe {
       height: 380px;
     }
@@ -40,13 +48,14 @@
 
 @media @desktop-widths {
   .address-map {
+    height: 500px;
 
     &__iframe {
       height: 500px;
     }
 
     &__decorative-element:before, &__decorative-element:after {
-      height: 100px;
+      height: 140px;
     }
   }
 }
