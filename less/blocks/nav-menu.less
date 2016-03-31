@@ -6,6 +6,13 @@
   position: relative;
   z-index: 50;
 
+  &__logo {
+    width: 150px;
+    height: 40px;
+    background-color: red;
+    margin-top: 20px;
+  }
+
   &__container {
     display: none;
   }
@@ -28,8 +35,8 @@
     font-weight: 700;
     line-height: 32px;
     text-transform: uppercase;
-    padding: 15px 0;
     background-color: #1d2631;
+    padding: 13px;
   }
 
   &__toggle-menu-icon {
@@ -95,7 +102,6 @@
     width: 150px;
     height: 40px;
     background-color: red;
-
   }
 
 }
@@ -136,7 +142,7 @@
     &__logo {
       width: 150px;
       height: 40px;
-      margin-top: 20px;
+      margin-top: 30px;
     }
 
     &__list-item {
@@ -144,16 +150,17 @@
     }
 
     &__list {
+      width: 655px;
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
       height: 50px;
       margin-top: 0;
     }
 
     &__list-link {
       color: #ffffff;
-      width: 150px;
-      padding: 17px 5px;
+      padding: 15px 0;
       margin-top: 20px;
       margin-left: 15px;
       font-weight: 400;
@@ -161,6 +168,10 @@
       line-height: 18px;
       text-transform: none;
       background-color: rgba(29, 38, 49, 0);
+    }
+
+    &__list-link:hover {
+      border-bottom: 3px solid #FFFFFF;
     }
   }
 }
