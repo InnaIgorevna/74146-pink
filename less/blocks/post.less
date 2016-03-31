@@ -22,7 +22,7 @@
   }
 
   &--overall-width {
-    width: 320px;
+    min-width: 320px;
     padding: 0;
     margin-bottom: 8px;
   }
@@ -34,10 +34,8 @@
   }
 
   &__picture--full-width {
-    min-width: 320px;
+    width: 100%;
     height: 137px;
-    background: url("../img/panorama-mobile.jpg")no-repeat center;
-    background-size: 100% 100%;
     position: relative;
   }
 
@@ -74,8 +72,6 @@
     &__picture--full-width {
       width: 100%;
       height: 510px;
-      background: url("../img/panorama-tablet@2x.jpg")no-repeat center;
-      background-size: 100% 510px;
     }
 
     &--overall-width {
@@ -86,11 +82,6 @@
 
     &__picture{
       margin-bottom: 20px;
-    }
-
-    &__picture img{
-      width: 100%;
-      height: 300px;
     }
 
     &__author {
@@ -135,17 +126,10 @@
     &__picture--full-width {
       width: 100%;
       height: 510px;
-      background: url("../img/panorama-desktop@2x.jpg")no-repeat center;
-      background-size: 100% 510px;
     }
 
     &__author--best-post {
       padding: 0 35px 0 35px;
-    }
-
-    &__picture img{/*после ставки картинки удалить*/
-      width: 100%;
-      height: 400px;
     }
 
     &__text {
