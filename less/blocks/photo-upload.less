@@ -52,6 +52,10 @@
     top: -6px;
   }
 
+  &__tools-scale-bubble:active {
+    background-color: #d22856;
+  }
+
   &__send {
     margin-bottom: 75px;
     margin-top: 45px;
@@ -73,9 +77,28 @@
     color: #d22856;
   }
 
+  &__link--send:hover {
+    background-color: #d22856;
+    color: #FFFFFF;
+  }
+
+  &__link--send:active {
+    color: #e06989;
+  }
+
   &__link--canceled {
     border: 2px solid #dddfe1;
     color: #dddfe0;
+  }
+
+  &__link--canceled:hover {
+     border: 2px solid #b5b9be;
+     color: #b5b9be;
+  }
+
+  &__link--canceled:active {
+    background-color: #b5b9be;
+    color: #cbced2;
   }
 
   &__tools-scale--item {
