@@ -9,15 +9,15 @@
   &__logo {
     display: block;
     position: absolute;
-    top: 10px;
+    top: 20px;
     left: 20px;
     width: 150px;
     height: 40px;
-    background-color: red;
+    background: url("../img/logo-pink-white-mobile.svg") no-repeat;
   }
 
   &__container {
-
+    display: none;
   }
 
   &__list {
@@ -104,12 +104,6 @@
     background-color: #ffffff;
   }
 
-  &__logo {
-    width: 150px;
-    height: 40px;
-    background-color: red;
-  }
-
 }
 
 @media @tablet-widths {
@@ -117,7 +111,10 @@
     height: 110px;
 
     &__logo {
-      top: 30px;
+      width: 150px;
+      height: 40px;
+      top: 25px;
+      background: url("../img/logo-pink-white-tablet.svg") no-repeat;
     }
 
     &__toggle-menu-icon {
@@ -158,8 +155,7 @@
       height: 40px;
       margin-top: 30px;
       margin-left: 10px;
-      background-color: #c2ccd1;
-
+      background: url("../img/logo-pink-white-desktop.svg") no-repeat;
     }
 
     &__list-item {
@@ -173,6 +169,7 @@
       flex-wrap: wrap;
       height: 50px;
       margin-top: 0;
+      margin-right: 20px;
       position: static;
     }
 

@@ -1,7 +1,7 @@
 
 .intro {
-  padding: 0 20px;
-  margin-top: 110px;
+  width: 300px;
+  margin: 110px auto 0 auto;
 
   &__title {
     color: #ffffff;
@@ -9,6 +9,7 @@
     font-size: 24px;
     line-height: 30px;
     font-weight: 300;
+
   }
 
   &--correct-intro {
@@ -23,6 +24,7 @@
 
 @media @tablet-widths{
   .intro {
+    width: 500px;
     margin-top: 190px;
 
     &__title {
@@ -53,9 +55,11 @@
 
 @media @desktop-widths {
   .intro {
+    width: 55%;
     margin-top: 177px;
 
     &--main {
+      width: 300px;
       height: 177px;
       margin-top: 245px;
 
@@ -71,8 +75,5 @@
       margin-top: 175px;
     }
 
-    &__title--correct-title {
-      padding: 0 85px;
-    }
   }
 }
