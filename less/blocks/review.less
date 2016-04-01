@@ -102,6 +102,7 @@
     &__picture {
       display: block;
     }
+
     &__toggle {
       display: block;
       position: absolute;
@@ -114,11 +115,16 @@
       display: block;
       width: 30px;
       height: 30px;
-      border-right: 2px solid rgba(53, 67, 81, 0.3);
-      border-bottom: 2px solid rgba(53, 67, 81, 0.3);
+      border-right: 2px solid #caced1;
+      border-bottom: 2px solid #caced1;
       border-radius: 2px;
     }
 
+    &__toggle-pointer:hover{
+      border-right: 2px solid #7e868f;
+      border-bottom: 2px solid #7e868f;
+    }
+    
     &__toggle-pointer--left {
       position: absolute;
       left: 10px;

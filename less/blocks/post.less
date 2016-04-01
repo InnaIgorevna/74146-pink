@@ -8,6 +8,13 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  background: #f2f2f2;
+
+  &--overall-width {
+    min-width: 320px;
+    padding: 0;
+    margin-bottom: 8px;
+  }
 
   &__author {
     padding: 0 15px;
@@ -19,12 +26,6 @@
 
   &__author--best-post {
     padding: 0 35px 20px 35px;
-  }
-
-  &--overall-width {
-    min-width: 320px;
-    padding: 0;
-    margin-bottom: 8px;
   }
 
   &__picture{
@@ -72,6 +73,12 @@
     margin-bottom: 25px;
     padding: 0;
 
+    &--overall-width {
+      width: 100%;
+      height: auto;
+      margin-bottom: 75px;
+    }
+
     &__picture{
       height: 300px;
       margin-bottom: 20px;
@@ -80,12 +87,6 @@
     &__picture--full-width {
       width: 100%;
       height: 510px;
-    }
-
-    &--overall-width {
-      width: 100%;
-      height: auto;
-      margin-bottom: 75px;
     }
 
     &__author {
@@ -123,8 +124,8 @@
     height: 555px;
 
     &--overall-width {
-      margin-bottom: 0;
-      height: 510px;
+      height: 640px;
+      margin-bottom: 20px;
     }
 
     &__picture{
