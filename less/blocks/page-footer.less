@@ -3,7 +3,12 @@
   min-width: 320px;
 
   &__copyright {
+    color: #000000;
     .margin-block-footer();
+  }
+
+  &__logo-htmlacademy:hover {
+    color: red;
   }
 
   &__copyright-list {
@@ -21,6 +26,7 @@
   &__container {
     display: none;
   }
+
 }
 
 @media @tablet-widths {
@@ -58,8 +64,16 @@
       width: 30px;
     }
 
+    &__logo-htmlacademy {
+      color: #d22856;
+    }
+
     &__logo-htmlacademy:hover {
       color: #000000;
+    }
+
+    &__logo-htmlacademy:active {
+      color: #dddfe1;
     }
   }
 }
