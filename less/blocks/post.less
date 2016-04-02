@@ -26,6 +26,7 @@
 
   &__author--best-post {
     padding: 0 35px 20px 35px;
+    height: 150px;
   }
 
   &__picture{
@@ -44,7 +45,7 @@
   }
 
   &__text {
-    margin-bottom: 5px;
+    margin-bottom: 12px;
   }
 
   &__like {
@@ -63,6 +64,21 @@
 
   &__like-text {
     color: #d22856;
+    position: relative;
+    margin-left: 30px;
+    text-transform: uppercase;
+  }
+
+  &__like-text:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -30px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url("../img/icon-heart.svg") no-repeat;
+    background-size: contain;
   }
 }
 
@@ -70,13 +86,13 @@
   .post {
     width: 300px;
     height: 450px;
-    margin-bottom: 25px;
     padding: 0;
+    margin-bottom: 25px;
 
     &--overall-width {
       width: 100%;
       height: auto;
-      margin-bottom: 75px;
+      margin-bottom: 0;
     }
 
     &__picture{
@@ -90,7 +106,7 @@
     }
 
     &__author {
-      padding: 0 30px;
+      padding: 0 25px;
     }
 
     &__author--best-post {
@@ -103,6 +119,10 @@
       width: 530px;
     }
 
+    &__text {
+      margin-bottom: 15px;
+    }
+
     &__like-text--best {
       display: block;
       position: absolute;
@@ -111,7 +131,19 @@
     }
 
     &__like-text {
+      display: block;
       margin-bottom: 20px;
+      margin-left: 0;
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    &__like-text:before {
+      left: 230px;
+    }
+
+    &__like-text--best:before {
+      left: 110px;
     }
   }
 }
@@ -119,13 +151,13 @@
 
 @media @desktop-widths {
   .post {
-    margin-bottom: 40px;
+    margin-bottom: 55px;
     padding: 0;
     height: 555px;
 
     &--overall-width {
       height: 640px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     &__picture{
@@ -134,7 +166,7 @@
 
     &__picture--full-width {
       width: 100%;
-      height: 510px;
+      height: 507px;
     }
 
     &__author--best-post {

@@ -27,7 +27,9 @@
     line-height: 20px;
   }
 
-  &__text-hidden {
+  &__text-hidden,
+  &__phone-svg,
+  &__mail-svg {
     display: none;
   }
 
@@ -200,6 +202,7 @@
     &__input {
       width: 80%;
       margin-bottom: 50px;
+      position: relative;
     }
 
     &__input--correct {
@@ -224,6 +227,24 @@
     &__input--contact-information {
       width: 77%;
       margin: 0 auto;
+    }
+
+    &__phone-svg {
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 65px;
+      right: 80px;
+    }
+
+    &__mail-svg {
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 200px;
+      right: 80px;
     }
 
     &__text-hidden-mobile {
@@ -300,7 +321,7 @@
 
 @media @desktop-widths {
   .fieldset {
-    width: 940px;
+    width: 935px;
 
     &--user-initials {
       width: 435px;
@@ -332,13 +353,31 @@
     &--contact-information {
       display: flex;
       justify-content: space-around;
-      margin-bottom: 70px;
+      margin-bottom: 60px;
       padding: 45px 0 0 0;
     }
 
     &__input--contact-information {
       width: 355px;
       margin: 0;
+    }
+
+    &__phone-svg {
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 66px;
+      left: 375px;
+    }
+
+    &__mail-svg {
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 66px;
+      right: 77px;
     }
 
     &__item-contact {
@@ -359,7 +398,7 @@
     }
 
     &__checkbox-block {
-      width: 260px;
+      width: 205px;
       margin: 33px auto;
     }
 

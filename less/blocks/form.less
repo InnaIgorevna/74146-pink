@@ -1,6 +1,7 @@
 
 .form {
   width: 100%;
+  margin-bottom: 20px;
 
   &__container {
     min-width: 320px;
@@ -72,6 +73,10 @@
     color: #d22856;
   }
 
+  &__submit-text-required-fields:after {
+    content: "поля";
+  }
+
 }
 
 @media @tablet-widths {
@@ -80,7 +85,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
     &__container {
       width: 94%;
@@ -135,6 +140,11 @@
 @media @desktop-widths {
   .form {
     display: flex;
+    margin-bottom: 10px;
+
+    &__container {
+      width: 100%;
+    }
 
     &__container--contact-information-container {
       margin: 0 auto;
@@ -157,6 +167,10 @@
 
     &__container--submit {
       margin-top: 50px;
+    }
+
+    &__submit-text-required-fields:after {
+      content: "для заполнения поля";
     }
   }
 }

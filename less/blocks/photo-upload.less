@@ -11,7 +11,7 @@
 
   &__container-inner {
     background: #f2f2f2;
-    padding: 60px 0 1px 0;
+    padding: 65px 0 1px 0;
   }
 
   &__tools {
@@ -21,10 +21,6 @@
   &__tools-list {
     display: flex;
     justify-content: center;
-  }
-
-  &__tool-icon {
-    margin: 7px 15px;
   }
 
   &__tools-scale {
@@ -57,7 +53,7 @@
   }
 
   &__send {
-    margin-bottom: 75px;
+    margin-bottom: 60px;
     margin-top: 45px;
   }
 
@@ -111,14 +107,33 @@
     margin: 0 auto;
     background-color: #f2f2f2;
   }
+
+  &__tool-icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px 15px;
+  }
+
+  &__tool-icon--editor {
+    background: url("../img/icon-editor-crop.svg") no-repeat;
+  }
+
+  &__tool-icon--diagram {
+    background: url("../img/icon-editor-fill.svg") no-repeat;
+  }
+
+  &__tool-icon--contrast {
+    background: url("../img/icon-editor-contrast.svg") no-repeat center;
+  }
 }
 
 @media @tablet-widths {
   .photo-upload {
     width: 100%;
+    margin-top: 0;
 
     &__container-text {
-      margin-bottom: 125px;
+      margin-bottom: 65px;
     }
 
     &__head-text {
@@ -184,7 +199,6 @@
       left: 190px
     }
 
-
     &__send {
      margin-top: 65px;
     }
@@ -199,8 +213,12 @@
 @media @desktop-widths {
   .photo-upload {
 
+    &__picture {
+      margin-left: 85px;
+    }
+
     &__tools {
-      margin-right: 30px;
+      margin-right: 70px;
     }
 
     &__tools-list {
@@ -242,7 +260,7 @@
       display: flex;
       flex-direction: row;
       width: 450px;
-      margin: 115px 0 70px 30px;
+      margin: 115px 0 70px 45px;
     }
 
     &__link {
