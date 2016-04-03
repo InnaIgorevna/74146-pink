@@ -1,8 +1,8 @@
 
 .application-download {
-  width: 320px;
+  min-width: 320px;
   height: 260px;
-  margin: 501px 0 auto;
+  margin-top: 470px;
   background-color: #1d2631;
   padding-top: 13px;
 
@@ -17,18 +17,32 @@
     font-family:"opensans", Arial, sans-serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 18px;
+    line-height: 13px;
     padding: 17px 0;
+  }
+
+  &__link:hover {
+    color: #d22856;
+    background-color: #FFFFFF;
+  }
+
+  &__link:active {
+    color: rgba(210, 40, 86, 0.4);
   }
 
   &__apps-list {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    margin-bottom: 20px;
   }
 
   &__apps-item {
+    display: block;
     margin: 0 15px;
+    width: 50px;
+    height: 60px;
+    background-color: #CCEEFF;
   }
 
   &__text{
@@ -41,22 +55,36 @@
     font-weight: 300;
     line-height: 24px;
   }
+
+  &__apps-item--apple {
+    background: url("../img/logo-apple.svg") no-repeat;
+  }
+
+  &__apps-item--android {
+    background: url("../img/logo-android.svg") no-repeat 5px 8px;
+  }
+
+  &__apps-item--microsoft {
+    background: url("../img/logo-microsoft.svg") no-repeat 3px 11px;
+  }
 }
 
 @media @tablet-widths {
   .application-download {
+    width: 320px;
     height: 305px;
-    margin-left: 10px;
     margin-top: 25px;
     background-color: rgba(29, 38, 49, 0.01);
     padding-top: 0;
 
     &__apps-list {
       margin-top: 45px;
+      margin-bottom: 31px;
     }
 
     &__link {
       width: 293px;
+      margin-left: 18px;
     }
 
     &__text {
@@ -69,19 +97,18 @@
 
 @media @desktop-widths {
   .application-download {
-    margin-left: 100px;
-    margin-top: 60px;
+    margin-top: 50px;
 
     &__link {
       font-size: 21px;
     }
 
     &__apps-list {
-      margin-top: 55px;
+      margin-top: 65px;
     }
 
     &__text {
-      margin: 41px auto;
+      margin: 48px auto;
     }
   }
 }

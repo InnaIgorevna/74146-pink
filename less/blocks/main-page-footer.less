@@ -2,12 +2,13 @@
   padding-top: 1px;
 
   &__title {
+    width: 300px;
+    margin: 50px auto 37px auto;
     color: #283645;
     font-size: 24px;
     line-height: 27px;
     font-weight: 300;
-    margin-top: 55px;
-    margin-bottom: 37px;
+    padding: 0 45px;
   }
 
   &__contact {
@@ -27,42 +28,51 @@
     line-height: 25px;
     font-weight: 300;
   }
+
+  &__contact-value--email:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  &__contact-value--email:active {
+    color: rgba(40, 54, 69, 0.57);
+    text-decoration: none;
+  }
 }
 
 @media @tablet-widths {
   .main-page-footer {
     &__title {
+      width: 500px;
       font-size: 40px;
       line-height: 46px;
       font-weight: 300;
-      padding: 0 45px;
-      margin-top: 105px;
+      margin-top: 25px;
     }
 
     &__contacts {
       width: 95%;
       margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     &__contact {
-      display: block;
-      position: absolute;
       width: 240px;
       margin: 10px 35px 40px 35px;
     }
-
   }
 }
 
 @media @desktop-widths {
   .main-page-footer {
     &__title {
+      width: 500px;
+      margin: 35px auto 50px auto;
       font-size: 50px;
       line-height: 57px;
       font-weight: 300;
-      padding: 0 120px;
-      margin-top: 150px;
-      margin-bottom: 50px;
     }
 
     &__contacts {
