@@ -2,6 +2,34 @@
   width: 250px;
   height: 60px;
   .margin-block-footer();
-  background-color: #8E939C;
-  background: url("../img/logo-pink-blue-desktop.svg") no-repeat center 1px;
+
+  &__logo-item {
+    display: none;
+  }
+
+  &__logo-main {
+    fill: #d22856;
+  }
+
+  &__logo-pink {
+    fill: #283645;
+  }
+
+  &__logo-main:hover,
+  &__logo-pink:hover {
+    fill: #d22856;
+  }
+
+  &__logo-main:active,
+  &__logo-pink:active {
+    fill: #6c7682;
+  }
+}
+
+@media @desktop-widths {
+  .logo {
+    &__logo-item {
+      display: block;
+    }
+  }
 }

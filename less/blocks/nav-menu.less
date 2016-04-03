@@ -9,15 +9,28 @@
   &__logo {
     display: block;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 5px;
+    left: -65px;
     width: 150px;
     height: 40px;
     /*background: url("../img/logo-pink-white-mobile.svg") no-repeat;*/
   }
 
+  &__svg {
+    fill: #ffffff;
+  }
 
+  &__svg:hover {
+    fill: #d22856;
+  }
 
+  &__svg:active {
+    fill: #6c7682;
+  }
+
+  &__svg-hidden {
+    display: none;
+  }
 
   &__container--hidden{
     display: none;
@@ -149,13 +162,14 @@
       width: 150px;
       height: 40px;
       top: 25px;
-      left: 37px;
+      left: 23px;
      /*background: url("../img/logo-pink-white-tablet.svg") no-repeat;*/
     }
 
-    &__svg:hover {
-      color: red;
+    &__svg-hidden {
+      display: block;
     }
+
 
     &__toggle-menu-icon {
       top: 40px;

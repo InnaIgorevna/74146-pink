@@ -3,43 +3,13 @@
   width: 100%;
   margin-bottom: 20px;
 
+
   &__container {
     min-width: 320px;
   }
 
   &__intro-text {
     padding: 20px 30px;
-  }
-
-  &__submit-error {
-    display: none;
-  }
-
-  &__submit-ok {
-    display: block;
-    z-index: 1000;
-    width: 320px;
-    background-color: red;
-    padding: 50px 0;
-    margin: 0 auto;
-  }
-
-  &__submit-title {
-
-  }
-
-  &__submit-btn--ok {
-    width: 280px;
-    margin: 0 auto;
-  }
-
-  &__submit-text {
-    width: 255px;
-    margin: 0 auto 80px auto;
-    margin-bottom: 30px;
-    color: #283645;
-    font-size: 14px;
-    font-weight: 400;
   }
 
   &__container--user-initials-container {
@@ -73,6 +43,7 @@
     line-height: 30px;
     text-transform: uppercase;
     border-radius: 3px;
+    position: relative;
   }
 
   &__submit-btn:hover {
@@ -98,6 +69,56 @@
 
   &__submit-text-required-fields:after {
     content: "поля";
+  }
+
+  &__submit-ok {
+    padding-top: 50px;
+  }
+
+  &__submit-error {
+    padding: 50px 0;
+  }
+
+  &__submit-ok,
+  &__submit-error {
+    display: none;
+    position: absolute;
+    z-index: 2000;
+    width: 320px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 5px 0 #cacaca;
+    border-radius: 5px;
+    right: 10px;
+  }
+
+  &__submit-title {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  &__submit-text {
+    width: 260px;
+    margin: 0 auto 40px auto;
+    color: #283645;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  &__submit-btn--ok {
+    width: 280px;
+    margin: 50px auto 0 auto;
+  }
+
+  &__submit-text--error{
+    width: 300px;
+  }
+
+  &__container-background {
+    background-color: #f2f2f2;
+    height: 160px;
   }
 
 }
@@ -157,6 +178,40 @@
       margin-top: 0;
       text-align: right;
     }
+
+    &__submit-ok,
+    &__submit-error {
+      width: 460px;
+      margin: 0 auto;
+    }
+
+    &__submit-title {
+      width: 305px;
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0 auto 30px auto;
+    }
+
+    &__submit-text {
+      width: 310px;
+      color: #283645;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__submit-btn--ok {
+      width: 300px;
+      margin: 50px auto 0 auto;
+    }
+
+    &__submit-title-error {
+      width: 230px;
+    }
+
+    &__submit-text--error{
+      width: 300px;
+      margin: 0 auto 40px auto;
+    }
   }
 }
 
@@ -194,6 +249,37 @@
 
     &__submit-text-required-fields:after {
       content: "для заполнения поля";
+    }
+
+    &__submit-ok {
+      width: 780px;
+    }
+
+    &__submit-title {
+      width: 100%;
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0 auto 30px auto;
+    }
+
+    &__submit-text {
+      width: 375px;
+      color: #283645;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__submit-btn--ok {
+      width: 460px;
+    }
+
+    &__submit-title-error {
+      width: 230px;
+    }
+
+    &__submit-text--error{
+      width: 300px;
+      margin: 0 auto 40px auto;
     }
   }
 }
