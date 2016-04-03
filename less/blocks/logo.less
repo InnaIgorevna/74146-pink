@@ -24,12 +24,55 @@
   &__logo-pink:active {
     fill: #6c7682;
   }
+
+  &__logo-main--nav-menu {
+    margin-top: 5px;
+    float: left;
+    margin-left: -50px;
+  }
+
+  &__logo-pink--nav-menu {
+    fill: #ffffff;
+  }
+
+  &__logo-item--mobile-nav-menu {
+    display: none;
+  }
+
+}
+
+@media @tablet-widths {
+  .logo {
+    &__logo-main--nav-menu {
+      margin-top: 31px;
+      float: left;
+      margin-left: 30px;
+    }
+
+    &__logo-item--mobile {
+      display: block;
+    }
+
+    &__logo-item {
+      display: none;
+    }
+  }
 }
 
 @media @desktop-widths {
   .logo {
     &__logo-item {
       display: block;
+    }
+
+    &__logo-main-nav-menu {
+      margin-top: 31px;
+      margin-left: 487px;
+    }
+
+    &__logo-pink--nav-menu,
+    &__logo-main--nav-menu {
+      fill: #ffffff;
     }
   }
 }

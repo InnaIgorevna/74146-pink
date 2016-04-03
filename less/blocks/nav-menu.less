@@ -32,10 +32,13 @@
     display: none;
   }
 
+
+
+
+
   &__container--hidden{
     display: none;
   }
-
 
   &__list {
     display: block;
@@ -166,11 +169,6 @@
      /*background: url("../img/logo-pink-white-tablet.svg") no-repeat;*/
     }
 
-    &__svg-hidden {
-      display: block;
-    }
-
-
     &__toggle-menu-icon {
       top: 40px;
       right: 36px;
@@ -187,31 +185,21 @@
   .nav-menu {
     height: 110px;
     display: flex;
-    flex-direction: row-reverse;
+    /*flex-direction: row-reverse;*/
+
+    &__logo {
+      display: none;
+    }
 
     &__toggle-menu-icon {
       display: none;
     }
 
     &__container {
-      width: 960px;
+      /*width: 960px;*/
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
-    }
-
-    &__logo {
-      display: none;
-    }
-
-
-
-    &__logo-main {
-      width: 150px;
-      height: 40px;
-      margin-top: 30px;
-      margin-left: 10px;
-      background: url("../img/logo-pink-white-desktop.svg") no-repeat;
     }
 
     &__list-item {
@@ -219,13 +207,11 @@
     }
 
     &__list {
-      width: 690px;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       height: 50px;
       margin-top: 0;
-      margin-right: 20px;
       position: static;
       padding-top: 0;
       background-color: rgba(29, 38, 49, 0);
@@ -239,7 +225,7 @@
       color: #ffffff;
       padding: 15px 0;
       margin-top: 30px;
-      margin-left: 15px;
+
       font-weight: 400;
       font-size: 18px;
       line-height: 18px;

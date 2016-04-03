@@ -114,23 +114,32 @@
     margin: 10px 15px;
   }
 
-  &__tool-icon--editor {
-    background: url("../img/icon-editor-crop.svg") no-repeat;
+  &__tool-icon svg:hover {
+    fill: #b5b9be;
   }
 
-  &__tool-icon--diagram {
-    background: url("../img/icon-editor-fill.svg") no-repeat;
+  &__tool-icon svg:active {
+    fill: #8d949b;
+  }
+
+  &__tool-icon--editor{
+    fill: #d22856;
   }
 
   &__tool-icon--contrast {
-    background: url("../img/icon-editor-contrast.svg") no-repeat center;
+    margin-top: 10px;
+    fill: #b5b9be;
+  }
+
+  &__tool-icon--diagram {
+    fill: #b5b9be;
   }
 }
 
 @media @tablet-widths {
   .photo-upload {
     width: 100%;
-    margin-top: 0;
+    margin-top: 45px;
 
     &__container-text {
       margin-bottom: 65px;
@@ -199,6 +208,43 @@
       left: 190px
     }
 
+    &__tool-icon {
+      margin: 10px 40px;
+    }
+
+    &__tool-icon svg {
+      position: relative;
+      z-index: 50;
+      fill: #d22856;
+      margin-top: 0;
+    }
+
+    &__tool-icon--diagram,
+    &__tool-icon--editor {
+      width: 22px;
+      height: 22px;
+    }
+
+    &__tool-icon--contrast {
+      width: 16px;
+      height: 16px;
+    }
+
+    &__tool-icon {
+      width: 23px;
+      height: 23px;
+      margin-top: 13px;
+      margin-bottom: 40px;
+    }
+
+    &__tool-icon svg:hover {
+      fill: #b5b9be;
+    }
+
+    &__tool-icon svg:active {
+      fill: #8d949b;
+    }
+
     &__send {
      margin-top: 65px;
     }
@@ -212,6 +258,7 @@
 
 @media @desktop-widths {
   .photo-upload {
+    margin-top: 5px;
 
     &__picture {
       margin-left: 85px;
@@ -254,6 +301,25 @@
 
     &__tools-scale-bubble--three {
       left: 260px
+    }
+
+    &__tool-icon {
+      width: 23px;
+      height: 23px;
+      margin-top: 13px;
+      margin-bottom: 40px;
+    }
+
+    &__tool-icon--diagram,
+    &__tool-icon--editor {
+      width: 44px;
+      height: 44px;
+    }
+
+    &__tool-icon--contrast {
+      width: 32px;
+      height: 32px;
+      margin-left: 5px;
     }
 
     &__send {
