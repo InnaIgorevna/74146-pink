@@ -1,78 +1,83 @@
+
 .logo {
   width: 250px;
   height: 60px;
   .margin-block-footer();
 
-  &__logo-item {
+  &--nav-menu svg {
+    fill: #ffffff;
+  }
+
+  &__logo-item ,
+  &__logo-mobile-nav-menu,
+  &__logo-item-page-footer {
     display: none;
   }
 
-  &__logo-main {
-    fill: #d22856;
-  }
-
-  &__logo-pink {
-    fill: #283645;
-  }
-
-  &__logo-main:hover,
-  &__logo-pink:hover {
-    fill: #d22856;
-  }
-
-  &__logo-main:active,
-  &__logo-pink:active {
-    fill: #6c7682;
-  }
-
   &__logo-main--nav-menu {
-    margin-top: 5px;
     float: left;
     margin-left: -50px;
   }
 
-  &__logo-pink--nav-menu {
-    fill: #ffffff;
+  &--nav-menu svg:hover,
+  &--page-footer svg:hover{
+    fill: #d22856;
   }
 
-  &__logo-item--mobile-nav-menu {
-    display: none;
+  &--nav-menu svg:active,
+  &--page-footer svg:active{
+    fill: #6c7682;
   }
 
+  &__logo-mobile-page-footer:active {
+    fill: #6c7682;
+  }
+
+  &__logo-mobile-page-footer {
+    fill: #d22856;
+  }
 }
 
 @media @tablet-widths {
-  .logo {
-    &__logo-main--nav-menu {
-      margin-top: 31px;
-      float: left;
-      margin-left: 30px;
-    }
 
-    &__logo-item--mobile {
+  .logo {
+    &__logo-mobile-nav-menu {
       display: block;
     }
 
-    &__logo-item {
-      display: none;
+    &__logo-main--nav-menu {
+      margin-top: 31px;
+      float: left;
+      margin-left: 40px;
     }
   }
 }
 
 @media @desktop-widths {
   .logo {
-    &__logo-item {
+
+    &__logo-mobile-nav-menu {
+      display: none;
+    }
+
+    &__logo-item,
+    &__logo-mobile-page-footer,
+    &__logo-item-page-footer {
       display: block;
     }
 
-    &__logo-main-nav-menu {
-      margin-top: 31px;
-      margin-left: 487px;
+    &__logo-mobile-page-footer {
+      fill: #d22856;
     }
 
-    &__logo-pink--nav-menu,
-    &__logo-main--nav-menu {
-      fill: #ffffff;
+    &__logo-item-page-footer {
+      fill: #000000;
+    }
+
+    .logo__logo-main--nav-menu {
+      margin-left: 15px;
+      margin-right: 10px;
     }
   }
 }
+

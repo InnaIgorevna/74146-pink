@@ -1,5 +1,7 @@
 
 .slider {
+  width: 320px;
+  margin: 0 auto;
 
   &__list {
     overflow: hidden;
@@ -90,6 +92,8 @@
 
 @media @tablet-widths {
   .slider {
+    width: 660px;
+
     &__list {
       width: 660px;
     }
@@ -110,12 +114,12 @@
     #btn-3:checked ~ &__list .review__container {
       transform: translate(-1635px)
     }
-
   }
 }
 
 @media @desktop-widths {
   .slider {
+    width: 960px;
 
     &__list {
       width: 692px;

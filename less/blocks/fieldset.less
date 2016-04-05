@@ -102,7 +102,8 @@
     border: 2px solid #d22856;
   }
 
-  &__checkbox:checked + &__checkbox-label--switch:after, &__checkbox:checked + &__checkbox-label--switch:active:after {
+  &__checkbox:checked + &__checkbox-label--switch:after,
+  &__checkbox:checked + &__checkbox-label--switch:active:after {
     content: "";
     position: absolute;
     top: 1px;
@@ -153,7 +154,8 @@
     border: 2px solid #d22856;
   }
 
-  &__radio:checked + &__radio-label--toggle:after, &__radio:checked + &__radio-label--toggle:active:after {
+  &__radio:checked + &__radio-label--toggle:after,
+  &__radio:checked + &__radio-label--toggle:active:after {
     content: "";
     position: absolute;
     top: 2px;
@@ -166,15 +168,14 @@
   }
 
   &__textarea {
-    width: 100%;
+    width: 250px;
     height: 200px;
     border: 2px solid #e5e5e5;
-    text-align: center;
     color: #283645;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    padding-top: 15px;
+    padding: 15px;
     margin: 5px auto 0 auto;
     resize: vertical
   }
@@ -313,7 +314,7 @@
     }
 
     &__textarea {
-      width: 86%;
+      width: 470px;
       height: 175px;
       margin: 45px auto;
     }
@@ -408,10 +409,10 @@
     }
 
     &__textarea {
+      width: 780px;
       height: 110px;
       text-align: left;
       padding-left: 20px;
     }
-
   }
 }
